@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - USL Sahithi</title>
+    <!-- Bootstrap Icons CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+     <!-- box icon-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+   
+    <!-- Roboto Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css" rel="stylesheet" />
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js"></script>
+    <style>
+        body {
+            background: linear-gradient(120deg, #f8f9fa, #e7e9fc);
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        /* Header Styles */
+        header {
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            width: 100%;
+            background-color: #716be4; /* Updated to match the design */
+            
+            padding: 9px 6%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.5s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: 700;
+            color: white; /* Contrast with the navbar */
+        }
+
+        .logo span {
+            color: #f8f9fa;
+            transition: transform 0.3s ease;
+        }
+
+        .logo span:hover {
+            transform: scale(1.2);
+        }
+
+        /* Navbar */
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar-nav.ms-auto {
+            margin-left: auto;
+        }
+
+        .nav-item {
+            font-size: 17px;
+            font-weight: 400;
+        }
+
+        .nav-item a {
+            color: #333;
+            position: relative;
+            text-decoration: none;
+            padding: 8px 12px;
+            transition: color 0.3s;
+        }
+
+        
+        .nav-item a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0;
+            height: 3px;
+            background: white;
+            transition: 0.3s;
+        }
+
+        .nav-item a:hover::after {
+            width: 100%;
+        }
+
+        .navbar-toggler {
+            border: none;
+            background-color: transparent;
+        }
+
+        .navbar-toggler .fas {
+            color: white;
+            font-size: 20px;
+        }
+
+        .container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container h2{
+            margin-top: 1rem;
+            margin-bottom: 4rem;
+        }
+         
+        .row.justify-content-evenly {
+            margin-top: -1.5rem;
+            margin-bottom: 2rem; /* Brings content closer to the heading */
+        }
+
+        .contact-heading {
+            font-weight: bold;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-details {
+            margin-bottom: 20px;
+        }
+
+        .contact-details p {
+            display: flex;
+            align-items: center;
+            margin: 0.5rem 0;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .contact-details p i {
+            margin-right: 0.8rem; /* Space between the icon and the text */
+            color: #6c63ff; /* Icon color */
+            font-size: 1.2rem; /* Icon size */
+        }
+
+        .contact-form {
+            border-radius: 50%;
+            width: 100%;
+            max-width: 400px;
+        }
+        .contact-form button {
+            background-color: #6c63ff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+        }
+        .contact-details i{
+            font-size: 1.5rem;
+            color: #6c63ff;
+        }
+        
+
+        
+    </style>
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg navbar-light shadow-0">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <span>S</span>
+                <span>A</span>
+                <span>H</span>
+                <span>I</span>
+                <span>T</span>
+                <span>H</span>
+                <span>I</span>
+            </a>
+
+            <!-- Toggle Button for Mobile -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarRightAlignExample" aria-controls="navbarRightAlignExample" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item p-3">
+                        <a class="text-purple-400 active-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="text-dark" href="skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="text-dark" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="text-dark" href="index.html">Certifications</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="text-dark" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2 class="text-center contact-heading">Get in Touch</h2>
+        <div class="row justify-content-evenly w-100" >
+            <div class="col-md-5 col-10 contact-details">
+                <div class="row mb-3">
+                    <div class="col-1">
+                        <i class="bi bi-mortarboard"></i>
+                    </div>
+                    <div class="col-11">
+                        <p>MVGR College of Engineering(A)</p>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-1">
+                        <i class="bi bi-telephone-fill"></i>
+                    </div>
+                    <div class="col-11">
+                        <p>+91 9110389089</p>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-1">
+                        <i class="bi bi-envelope-fill"></i>
+                    </div>
+                    <div class="col-11">
+                        <p>uslsahithi8@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5 col-10">
+                <div class="contact-form">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Name" />
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="E-mail" />
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Mobile No." />
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" placeholder="Message" rows="5"></textarea>
+                    </div>
+                    <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   
+</body>
+
+</html>

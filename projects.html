@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio - USL Sahithi</title>
+    <!-- box icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- Roboto Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js"></script>
+    <!-- Animate Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        body {
+            background: linear-gradient(120deg, #f8f9fa, #e7e9fc);
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+           
+        }
+
+        /* Header Styles */
+        header {
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            width: 100%;
+            background-color: #716be4; /* Updated to match the design */
+            
+            padding: 9px 6%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.5s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: 700;
+            color: white; /* Contrast with the navbar */
+        }
+
+        .logo span {
+            color: #f8f9fa;
+            transition: transform 0.3s ease;
+        }
+
+        .logo span:hover {
+            transform: scale(1.2);
+        }
+
+        /* Navbar */
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar-nav.ms-auto {
+            margin-left: auto;
+        }
+
+        .nav-item {
+            font-size: 17px;
+            font-weight: 400;
+        }
+
+        .nav-item a {
+            color: #333;
+            position: relative;
+            text-decoration: none;
+            padding: 8px 12px;
+            transition: color 0.3s;
+        }
+
+        
+
+        .nav-item a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0;
+            height: 3px;
+            background: white;
+            transition: 0.3s;
+        }
+
+        .nav-item a:hover::after {
+            width: 100%;
+        }
+
+        .navbar-toggler {
+            border: none;
+            background-color: transparent;
+        }
+
+        .navbar-toggler .fas {
+            color: white;
+            font-size: 20px;
+        }
+            
+        /* Projects Section */
+            
+        #projects {
+            padding: 50px 10%;
+        }
+
+        .project-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+            gap: 30px 200px; /* Space between cards */
+            justify-items: center; /* Center-align cards horizontally */
+        }
+
+        .project-card {
+            background-color: #fff;
+            border-radius: 12px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                width: 200%;
+                max-width: 550px; /* Limit card width */
+                transition: transform 0.3s, box-shadow 0.3s;
+                }
+
+            .project-card img {
+                width: 100%;
+                height: auto; /* Maintain consistent height */
+                object-fit: cover;
+            }
+
+            
+
+
+            .project-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+
+            .project-card .project-details {
+                padding: 10px;
+                text-align: center;
+            }
+
+            .project-card .project-details h3 {
+                margin: 5px 0;
+                font-size: 18px;
+                color: #333;
+            }
+
+            .project-card .project-details p {
+                margin-bottom: 3px;
+                font-size: 14px;
+                color: #666;
+            }
+
+            .project-card .btn-container {
+                padding: 15px;
+                text-align: center;
+            }
+
+            .project-card .btn-container button {
+                padding: 10px 20px;
+                background-color: #716be4;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                font-size: 14px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+            .project-card .btn-container button:hover {
+                background-color: #574dbc;
+            }
+
+            /* Responsive for smaller screens */
+            @media (max-width: 768px) {
+                .project-container {
+                    grid-template-columns: 1fr; /* One card per row on smaller screens */
+                }
+            }
+
+
+    </style>
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg navbar-light shadow-0">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <span>S</span>
+                <span>A</span>
+                <span>H</span>
+                <span>I</span>
+                <span>T</span>
+                <span>H</span>
+                <span>I</span>
+            </a>
+
+            <!-- Toggle Button for Mobile -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarRightAlignExample" aria-controls="navbarRightAlignExample" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item p-3">
+                        <a class="text-purple-400 active-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="text-dark" href="skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="text-dark" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="text-dark" href="index.html">Certifications</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="text-dark" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+  
+         <!-- Projects Section -->
+    <section id="projects">
+        <h2 style="text-align: center; margin-bottom: 30px; margin-top: -20px">Explore My Projects</h2>
+        <div class="project-container">
+            <!-- Project Card 1 -->
+            <div class="project-card">
+                <img src="./img/port.png" alt="Portfolio Project">
+                <div class="project-details">
+                    <h3>Portfolio Website</h3>
+                    <p>A responsive personal portfolio website.</p>
+                </div>
+                <div class="btn-container">
+                    <button onclick="location.href='https://github.com/USLsahithi/sahithi-portfolio'">View</button>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="project-card">
+                <img src="./img/mini.png" alt="Course Craft">
+                <div class="project-details">
+                    <h3>Course Craft</h3>
+                    <p>An intelligent platform for recommending personalized course selections.</p>
+                </div>
+                <div class="btn-container">
+                    <button onclick="location.href='https://github.com/USLsahithi/CourseCraft'">View</button>
+                </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="project-card">
+                <img class="img-3" src="./img/srp.jpg" alt="Student Project">
+                <div class="project-details">
+                    <h3>NutriFit Website</h3>
+                    <p>An online platform promoting healthy diet plans and nutrition tips for a balanced lifestyle.</p>
+                </div>
+                <div class="btn-container">
+                    <button onclick="location.href='https://github.com/USLsahithi/srp'">View</button>
+                </div>
+            </div>
+             <!-- Project Card 4 -->
+             <div class="project-card">
+                <img src="./img/super-store.png" alt="Portfolio Project">
+                <div class="project-details">
+                    <h3>Super Store Analytics Dashboard</h3>
+<p>This is an interactive dashboard showcasing real-time analytics for a superstore, designed to display various performance metrics, trends, and insights. </p>
+
+                </div>
+                <div class="btn-container">
+                    <button onclick="location.href='https://github.com/USLsahithi/Super-Store-Analytics-Dashboard'">View</button>
+                </div>
+            </div>
+            <!-- Project Card 5 -->
+            <div class="project-card">
+                <img src="./img/walmart.png" alt="Portfolio Project">
+                <div class="project-details">
+                    <h3>Walmart Data Analysis</h3>
+                    <p>Detailed insights and analysis of Walmart's sales data, consumer behavior, and performance metrics.</p>                    
+                </div>
+                <div class="btn-container">
+                    <button onclick="location.href='https://github.com/USLsahithi/Walmart-Data-Analysis'">View</button>
+                </div>
+            </div>
+             <!-- Project Card 6 -->
+             <div class="project-card">
+                <img src="./img/working.jpeg" alt="Portfolio Project">
+                <div class="project-details">
+                    <h3>SafeDrive - Pothole and Speed Breaker Detection Using Deep Learning</h3>
+                    <p>An advanced system utilizing deep learning techniques to detect potholes and speed breakers in real-time for safer driving experiences.</p>
+                     </div>
+                <div class="btn-container">
+                    <button onclick="location.href='https://github.com/USLsahithi/SafeDrive'">View</button>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    </body>
+    </html>

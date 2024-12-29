@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForestCrazy Profile</title>
+    <!-- Roboto Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css" rel="stylesheet" />
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js"></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        body {
+            background: linear-gradient(120deg, #f8f9fa, #e7e9fc);
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        /* Header Styles */
+        header {
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            width: 100%;
+            background-color: #716be4; /* Updated to match the design */
+            
+            padding: 9px 6%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.5s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: 700;
+            color: white; /* Contrast with the navbar */
+        }
+
+        .logo span {
+            color: #f8f9fa;
+            transition: transform 0.3s ease;
+        }
+
+        .logo span:hover {
+            transform: scale(1.2);
+        }
+
+        /* Navbar */
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar-nav.ms-auto {
+            margin-left: auto;
+        }
+
+        .nav-item {
+            font-size: 17px;
+            font-weight: 400;
+        }
+
+        .nav-item a {
+            color: #333;
+            
+            position: relative;
+            text-decoration: none;
+            padding: 8px 12px;
+            transition: color 0.3s;
+        }
+
+        
+
+        .nav-item a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0;
+            height: 3px;
+            background: white;
+            transition: 0.3s;
+        }
+
+        .nav-item a:hover::after {
+            width: 100%;
+        }
+
+        .navbar-toggler {
+            border: none;
+            background-color: transparent;
+        }
+
+        .navbar-toggler .fas {
+            color: white;
+            font-size: 20px;
+        }
+
+
+        .card {
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            box-shadow: 5px 6px 6px 2px #e9ecef;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg navbar-light shadow-0">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <span>S</span>
+                <span>A</span>
+                <span>H</span>
+                <span>I</span>
+                <span>T</span>
+                <span>H</span>
+                <span>I</span>
+            </a>
+
+            <!-- Toggle Button for Mobile -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarRightAlignExample" aria-controls="navbarRightAlignExample" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item p-3">
+                        <a class="text-purple-400 active-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="text-dark" href="skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="text-dark" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="text-dark" href="index.html">Certifications</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="text-dark" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="container h-75">
+        <!-- Content -->
+        <div class="section">
+            <div class="text-center fs-2 fw-bold" style="margin-top: 1.5rem;">
+                <h2>Here are my skills to represent my Expertise</h2>
+            </div>
+            <div class="row">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 py-3">
+                    <div class="card h-100">
+                        <div class="p-4 text-center">
+                            <img class="w-100" src="./img/java.png" />
+                            
+                            <h5>Java</h5>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 py-3">
+                    <div class="card h-100">
+                        <div class="p-4 text-center">
+                            <img class="w-100" src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" />
+                            <h5>Python</h5>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 py-3">
+                    <div class="card h-100">
+                        <div class="p-4 text-center">
+                            <img class="w-100" src="https://cdn-icons-png.flaticon.com/512/689/689319.png" />
+                            <h5>Database</h5>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 py-3">
+                    <div class="card h-100">
+                        <div class="p-4 text-center">
+                            <img class="w-100" src="https://cdn-icons-png.flaticon.com/512/174/174854.png" />
+                            <h5>HTML</h5>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 py-3">
+                    <div class="card h-100">
+                        <div class="p-4 text-center">
+                            <img class="w-100" src="https://cdn-icons-png.flaticon.com/512/732/732190.png" />
+                            <h5>CSS</h5>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 py-3">
+                    <div class="card h-100">
+                        <div class="p-4 text-center">
+                            <img class="w-100" src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" />
+                            <h5>JavaScript</h5>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 py-3">
+                    <div class="card h-100">
+                        <div class="p-4 text-center">
+                            <img class="w-100" src="./img/excel.png" />
+                            <h5>Excel</h5>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 py-3">
+                    <div class="card h-100">
+                        <div class="p-4 text-center">
+                            <img class="w-100" src="./img/Power Bi.png" />
+                            <h5>Power BI</h5>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 py-3">
+                    <div class="card h-100">
+                        <div class="p-4 text-center">
+                            <img class="w-100" src="./img/Tableau.png" />
+                            <h5>Tableau</h5>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 py-3">
+                    <div class="card h-100">
+                        <div class="p-4 text-center">
+                            <img class="w-100" src="https://cdn-icons-png.flaticon.com/512/2772/2772128.png" />
+                            <h5>SQL</h5>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 py-3">
+                    <div class="card h-100">
+                        <div class="p-4 text-center">
+                            <img class="w-100" src="https://cdn-icons-png.flaticon.com/512/6577/6577289.png" />
+                            <h5>Version Control</h5>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 py-3">
+                    <div class="card h-100">
+                        <div class="p-4 text-center">
+                            <img class="w-100" src="./img/Machine Learning.png" />
+                            <h5>Machine Learning</h5>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+</body>
+
+</html>
