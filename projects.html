@@ -189,11 +189,37 @@
             }
 
             /* Responsive for smaller screens */
-            @media (max-width: 768px) {
-                .project-container {
-                    grid-template-columns: 1fr; /* One card per row on smaller screens */
-                }
-            }
+@media (max-width: 768px) {
+    .project-container {
+        grid-template-columns: 1fr; /* One card per row on smaller screens */
+        gap: 20px; /* Reduce spacing between cards */
+    }
+
+    .project-card {
+        width: 100%; /* Full width on mobile */
+        max-width: 100%; /* Prevent overflow */
+        margin: 0 auto; /* Center align the cards */
+    }
+
+    .project-card img {
+        height: 200px; /* Set a fixed height for mobile images */
+        object-fit: cover; /* Ensure images scale properly */
+    }
+
+    .project-card .project-details h3 {
+        font-size: 16px; /* Slightly smaller text */
+    }
+
+    .project-card .project-details p {
+        font-size: 12px; /* Smaller description text */
+    }
+
+    .project-card .btn-container button {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+}
+
 
 
     </style>
